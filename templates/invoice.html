@@ -63,20 +63,6 @@
     .invoice-box table tr.item.last td {
         border-bottom: none;
     }
-
-    @media only screen and (max-width: 600px) {
-        .invoice-box table tr.top table td {
-            width: 100%;
-            display: block;
-            text-align: center;
-        }
-
-        .invoice-box table tr.information table td {
-            width: 100%;
-            display: block;
-            text-align: center;
-        }
-    }
     </style>
 </head>
 
@@ -91,7 +77,8 @@
                             <img src="{{url_for('static',filename='logo.jpg')}}" style="width:100%; max-width:300px;">
                         </td>
 
-                        <td align="right"><br>
+                        <td align="right">
+                            <b>Invoice No: {{invoice}}</b><br>
                             <b>Created On: {{ todays_date }}</b><br>
                             <b>Delivery By: {{ delivery_date }}</b>
                         </td>
@@ -105,12 +92,13 @@
                     <tr>
                         <td>
                             <br>
-                            <b>Mode Of Payment</b> - {{ users.mode }}
+                            <b>Mode Of Payment</b> - {{ users.mode }}<br>
+                            <b>Nearest Pickup Point</b> - {{ pickup }}
                         </td>
 
                         <td align="right">
                             <b>Name</b> - {{ users.name }} <br>
-                            <b>Zipcode</b> - {{ users.zipcode }} <br>
+                            <b>Pincode</b> - {{ users.pincode }} <br>
                             <b>Email</b> - {{ users.email }} <br>
                             <b>Contact</b> - {{ phone }} <br>
                         </td>
