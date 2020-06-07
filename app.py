@@ -1,9 +1,12 @@
 import csv
 import smtplib
-from datetime import date
-from email.mime.image import MIMEImage
+from datetime import date, datetime
+from datetime import timedelta
+from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
+import pdfkit
 import pyrebase
 from firebase import firebase
 from flask import Flask, request, make_response, jsonify
@@ -154,15 +157,25 @@ def sendPDF(url):
             to=to_whatsapp_number)
 
 
-def genPDF():
+def genPDF(users, phone):
+    sum = 0
+    dates = datetime.now()
+    todays_date = dates.strftime("%A,%d %B,%Y")
+    delivery = dates + timedelta(days=7)
+    delivery_date = delivery.strftime("%A,%d %B,%Y")
+    req = request.get_json(force=True)
+    sess = req.get('session')[-13:] + "-" + str(date.today())
+    orders = fb_app.get('/orders', sess)
+    for key in orders:
+        sum += orders[key][0] * orders[key][1]
     env = Environment(loader=FileSystemLoader('.'))
-    template = env.get_template("invoice.html")
-    template_vars = {"title": "Sales Funnel Report - National",
-                     "national_pivot_table": ''}
+    template = env.get_template("templates/invoice.html")
+    template_vars = {'users': users, 'orders': orders, "todays_date": todays_date, "delivery_date": delivery_date,
+                     "sum": sum, 'phone': phone}
     html_out = template.render(template_vars)
-    pdf = ""
-    # HTML(string=html_out).write_pdf("report.pdf")
-
+    path_to_wkhtml2pdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
+    config1 = pdfkit.configuration(wkhtmltopdf=path_to_wkhtml2pdf)
+    pdf = pdfkit.from_string(html_out, False, configuration=config1)
     return pdf
 
 
@@ -197,7 +210,6 @@ def get_order():
     req = request.get_json(force=True)
     sess = req.get('session')[-13:] + "-" + str(date.today())
     curr_orders = fb_app.get('/orders', sess)
-    print(curr_orders)
     text = ""
     i = 1
     sums = 0
@@ -245,38 +257,40 @@ def add_mode():
     db = firebaseObj.database()
     db.child('users').child(phone).update(ph)
     order = get_order()
-    return "This is your order summary.<br>" + order + " Reply 'Yes' to confirm order and 'No' to cancel."
+    return "This is your order summary.<br>" + order + " Reply 'Yes' to confirm order and 'No' to modify."
 
 
 def conf_order():
-    pdf = genPDF()  # here we'll receive a pdf
     req = request.get_json(force=True)
     phone = req.get('session')[-13:]
-    ph = fb_app.get('/users', phone)
-    email = ph['email']
-    name = ph['name']
-    message = "Hey {},\n Thank you for ordering with us. We hope you find our services useful. Here is your invoice." \
+    users = fb_app.get('/users', phone)
+    pdf = genPDF(users, phone)  # here we'll receive a pdf
+    email = users['email']
+    name = users['name']
+    message = "Hey {},<br> Thank you for ordering with us. We hope you find our services useful. Here is your invoice." \
         .format(name)
     text = sendmail(email, message, pdf)
-    return text
+    if text == "Success":
+        return ""
+    else:
+        return "There was some problem in sending your invoice."
 
 
 def sendmail(to_email, message, pdf):
     from_email = config['fromEmail']
     password = config['appPWD']
     msg = MIMEMultipart('alternative')
-    msg['Subject'] = "Order Confirmed - EssentialsKart"
+    msg['Subject'] = "Your EssentialsKart order has been confirmed."
     msg['From'] = from_email
     msg['To'] = to_email
 
-    # msgText = MIMEText(message + '<img width="100%" src="cid:image">', 'html')
-    msg.attach(message)
+    msgText = MIMEText(message, 'html')
+    msg.attach(msgText)
 
-    fp = open(pdf, 'rb')  # pdf path or object
-    msgImage = MIMEImage(fp.read())
-    fp.close()
-    msgImage.add_header('Content-ID', '<image>')
-    msg.attach(msgImage)
+    fp = pdf  # pdf path or object
+    msgpdf = MIMEApplication(fp, _subtype="pdf")
+    msgpdf.add_header('Content-Disposition', 'attachment', filename='invoice')
+    msg.attach(msgpdf)
 
     response = {}
     try:
@@ -289,11 +303,41 @@ def sendmail(to_email, message, pdf):
     except Exception as err:
         print(err)
         response['email_status'] = "Failed"
+    print(response)
     return response
 
 
 def edit_order():
-    return ""
+    db = firebaseObj.database()
+    req = request.get_json(force=True)
+    params = req.get('queryResult').get('parameters')
+    sess = req.get('session')[-13:] + "-" + str(date.today())
+    orders = fb_app.get('/orders', sess)
+    item_list = params['items']
+    num_list = params['number']
+    order_dict = dict(orders)
+    neglist = []
+    for i in range(len(item_list)):
+        price = get_price(item_list[i])
+        if item_list[i] not in order_dict:
+            if int(num_list[i]) != 0:
+                if price != -1:
+                    temp = {item_list[i]: [int(num_list[i]), price]}
+                    order_dict.update(temp)
+                else:
+                    neglist.append(item_list[i])
+        else:
+            if int(num_list[i]) == 0:
+                print(type(item_list[0]))
+                del order_dict[item_list[i]]
+            else:
+                order_dict[item_list[i]][0] = int(num_list[i])
+    db.child('orders').child(sess).set(order_dict)
+    text = ""
+    if len(neglist) != 0:
+        text = "Some things were not added due to unavailability."
+    return "Okay, the requested changes have been made.<br>{}<br>{}<brReply 'Yes' to confirm else keep typing in the " \
+           "same format for any further changes.".format(get_order(), text)
 
 
 def edit_details():
@@ -309,7 +353,8 @@ def edit_details():
                 data[key.replace("1", "")] = params[key]
     db = firebaseObj.database()
     db.child('users').child(phone).set(data)
-    return "Are your details correct now?"
+    return "Are your details correct now?<br>Name: {}<br>Email: {}<br>Zip code: {}".format(data['name'], data['email'],
+                                                                                           data['zipcode'])
 
 
 @app.route('/webhook', methods=['GET', 'POST'])
@@ -364,19 +409,19 @@ def webhook():
             "fulfillmentText": text,
         }
         return make_response(jsonify(reply))
-    elif action == 'check_passcode':  # check phone
+    elif action == 'check_passcode':  # check passcode
         text = check_pwd()
         reply = {
             "fulfillmentText": text,
         }
         return make_response(jsonify(reply))
-    elif action == 'get_passcode':  # check phone
+    elif action == 'get_passcode':  # store passcode
         text = add_pwd()
         reply = {
             "fulfillmentText": text,
         }
         return make_response(jsonify(reply))
-    elif action == 'mode':  # check phone
+    elif action == 'mode':  # store mode
         text = add_mode()
         reply = {
             "fulfillmentText": text,
