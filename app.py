@@ -367,9 +367,10 @@ def get_pincode_list(zipcode):
         for row in csv_reader:
             if row[1] == zipcode:
                 if row[3] == 'NA' or row[3] == row[4]:
-                    point = "{}, {}, {} - {}".format(row[0], row[2], row[4], row[1])
+                    point = "{}, {}, {} - {}".format(row[0].strip(), row[2].strip(), row[4].strip(), row[1].strip())
                 else:
-                    point = "{}, {}, {}, {} - {}".format(row[0], row[2], row[3], row[4], row[1])
+                    point = "{}, {}, {}, {} - {}".format(row[0].strip(), row[2].strip(), row[3].strip(), row[4].strip(),
+                                                         row[1].strip())
                 pickup_list.append(point)
             elif len(pickup_list) > 0:
                 break
@@ -406,7 +407,7 @@ def webhook():
         text = pushToDB()
     elif action == 'input.welcome':  # send the items pdf
         url = "https://github.com/ItsTheKayBee/chatbot-webhook-API/raw/master/price_list.pdf"
-        # text = sendPDF(url)      # uncomment later
+        text = sendPDF(url)
     elif action == 'OrderItems.OrderItems-cancel':  # delete the session and end it
         text = del_sess()
     elif action == 'confirm_details':  # ask for confirmation about order
