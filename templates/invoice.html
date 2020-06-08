@@ -10,7 +10,6 @@
         max-width: 800px;
         margin: auto;
         padding: 30px;
-        border: 1px solid #eee;
         font-size: 19px;
         line-height: 24px;
         font-family: 'Courier New', 'Helvetica';
@@ -63,6 +62,7 @@
     .invoice-box table tr.item.last td {
         border-bottom: none;
     }
+
     </style>
 </head>
 
@@ -74,7 +74,7 @@
                 <table>
                     <tr>
                         <td class="title">
-                            <img src="{{url_for('static',filename='logo.jpg')}}" style="width:100%; max-width:300px;">
+                            <img src="D:\chatbot_webhook_api\static\logo.jpg" style="width:100%; max-width:300px;">
                         </td>
 
                         <td align="right">
@@ -92,17 +92,16 @@
                     <tr>
                         <td>
                             <br>
-                            <b>Mode Of Payment</b> - {{ users.mode }}<br>
+                            <b>Mode Of Payment</b> - {{ users.mode.title() }}<br>
                             <b>Nearest Pickup Point</b> - {{ pickup }}
                         </td>
 
                         <td align="right">
                             <b>Name</b> - {{ users.name }} <br>
-                            <b>Pincode</b> - {{ users.pincode }} <br>
+                            <b>Pincode</b> - {{ users.zipcode }} <br>
                             <b>Email</b> - {{ users.email }} <br>
                             <b>Contact</b> - {{ phone }} <br>
                         </td>
-
                     </tr>
                 </table>
             </td>
@@ -115,7 +114,6 @@
             <td class="center">Price Per Quantity</td>
             <td class="center">Total Price</td>
         </tr>
-
 
         {% for key in orders %}
         <tr class="item last center">

@@ -44,12 +44,38 @@ def getAction():
     return action
 
 
+def getUser():
+    phone = getPhone()
+    return fb_app.get('/users', phone)
+
+
+def getPhone():
+    req = request.get_json(force=True)
+    return req.get('session')[-13:]
+
+
+def getParams(key=None):
+    req = request.get_json(force=True)
+    if key is None:
+        return req.get('queryResult').get('parameters')
+    else:
+        return req.get('queryResult').get('parameters')[key]
+
+
+def getUserOrder():
+    sess = getSession()
+    return fb_app.get('/orders', sess)
+
+
+def getSession():
+    return getPhone() + "-" + str(date.today())
+
+
 def pushToDB():
     db = firebaseObj.database()
-    req = request.get_json(force=True)
-    params = req.get('queryResult').get('parameters')
-    sess = req.get('session')[-13:] + "-" + str(date.today())
-    curr_orders = fb_app.get('/orders', sess)
+    params = getParams()
+    sess = getSession()
+    curr_orders = getUserOrder()
     if curr_orders is not None:
         item_list = params['items']
         num_list = params['number']
@@ -128,17 +154,16 @@ def get_price(item):
 
 
 def sendPDF(url):
-    req = request.get_json(force=True)
     username = config['twilioSID']
     password = config['twilioAUTH']
     client = Client(username=username, password=password)
     from_whatsapp_number = 'whatsapp:+14155238886'
-    to_whatsapp_number = req.get('session')[-13:]
+    to_whatsapp_number = getPhone()
     client.messages.create(body='EssentialsKart Products',
                            media_url=url,
                            from_=from_whatsapp_number,
                            to=to_whatsapp_number)
-    ch_contact = fb_app.get('/users', to_whatsapp_number)
+    ch_contact = getUser()
     if ch_contact is not None:
         name = ch_contact['name']
         client.messages.create(
@@ -155,23 +180,24 @@ def sendPDF(url):
                  'during lockdown. So, what would you like to order today?',
             from_=from_whatsapp_number,
             to=to_whatsapp_number)
+    return ""
 
 
-def genPDF(users, phone):
-    sum = 0
+def genPDF(users, phone, pickup):
+    sums = 0
     dates = datetime.now()
     todays_date = dates.strftime("%A,%d %B,%Y")
     delivery = dates + timedelta(days=7)
     delivery_date = delivery.strftime("%A,%d %B,%Y")
-    req = request.get_json(force=True)
-    sess = req.get('session')[-13:] + "-" + str(date.today())
-    orders = fb_app.get('/orders', sess)
+    orders = getUserOrder()
+    db = firebaseObj.database()
+    invoice = len(db.child('orders').get().val())
     for key in orders:
-        sum += orders[key][0] * orders[key][1]
+        sums += orders[key][0] * orders[key][1]
     env = Environment(loader=FileSystemLoader('.'))
     template = env.get_template("templates/invoice.html")
     template_vars = {'users': users, 'orders': orders, "todays_date": todays_date, "delivery_date": delivery_date,
-                     "sum": sum, 'phone': phone}
+                     "sum": sums, 'phone': phone, 'invoice': invoice, 'pickup': pickup}
     html_out = template.render(template_vars)
     path_to_wkhtml2pdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
     config1 = pdfkit.configuration(wkhtmltopdf=path_to_wkhtml2pdf)
@@ -180,15 +206,13 @@ def genPDF(users, phone):
 
 
 def del_sess():
-    req = request.get_json(force=True)
-    sess = req.get('session')[-36:] + "-" + str(date.today())
+    sess = getSession()
     fb_app.delete('/orders', sess)
+    return ""
 
 
 def check_phone():
-    req = request.get_json(force=True)
-    phone = req.get('session')[-13:]
-    ch_contact = fb_app.get('/users', phone)
+    ch_contact = getUser()
     if ch_contact is not None:
         name = ch_contact['name']
         return name + ", please enter your passcode to proceed."
@@ -197,9 +221,8 @@ def check_phone():
 
 
 def conf_details():
-    req = request.get_json(force=True)
-    details = req.get('queryResult').get('parameters')
-    contact = req.get('session')[-13:]
+    details = getParams()
+    contact = getPhone()
     db = firebaseObj.database()
     details_dict = {'name': details['name']['name'].title(), 'email': details['email'], 'zipcode': details['zipcode']}
     db.child('users').child(contact).set(details_dict)
@@ -207,9 +230,7 @@ def conf_details():
 
 
 def get_order():
-    req = request.get_json(force=True)
-    sess = req.get('session')[-13:] + "-" + str(date.today())
-    curr_orders = fb_app.get('/orders', sess)
+    curr_orders = getUserOrder()
     text = ""
     i = 1
     sums = 0
@@ -224,10 +245,8 @@ def get_order():
 
 
 def check_pwd():
-    req = request.get_json(force=True)
-    phone = req.get('session')[-13:]
-    password = fb_app.get('/users', phone)['passcode']
-    passcode = req.get('queryResult').get('parameters')['passcode']
+    password = getUser()['passcode']
+    passcode = getParams('passcode')
     if password != passcode:
         return "Wrong passcode. Please try again."
     else:
@@ -235,10 +254,9 @@ def check_pwd():
 
 
 def add_pwd():
-    req = request.get_json(force=True)
-    phone = req.get('session')[-13:]
-    passcode = req.get('queryResult').get('parameters')['new_passcode']
-    ph = fb_app.get('/users', phone)
+    phone = getPhone()
+    passcode = getParams('new_passcode')
+    ph = getUser()
     if len(str(int(passcode))) == 4 and str(int(passcode)).isnumeric():
         ph.update({'passcode': passcode})
         db = firebaseObj.database()
@@ -249,31 +267,26 @@ def add_pwd():
 
 
 def add_mode():
-    req = request.get_json(force=True)
-    phone = req.get('session')[-13:]
-    mode = req.get('queryResult').get('parameters')['mop']
-    ph = fb_app.get('/users', phone)
+    phone = getPhone()
+    mode = getParams('mop')
+    ph = getUser()
     ph['mode'] = mode
     db = firebaseObj.database()
     db.child('users').child(phone).update(ph)
     order = get_order()
-    return "This is your order summary.<br>" + order + " Reply 'Yes' to confirm order and 'No' to modify."
+    return "Okay. This is your order summary.<br>" + order + " Reply 'Yes' to confirm order and 'No' to modify."
 
 
 def conf_order():
-    req = request.get_json(force=True)
-    phone = req.get('session')[-13:]
-    users = fb_app.get('/users', phone)
-    pdf = genPDF(users, phone)  # here we'll receive a pdf
-    email = users['email']
-    name = users['name']
-    message = "Hey {},<br> Thank you for ordering with us. We hope you find our services useful. Here is your invoice." \
-        .format(name)
-    text = sendmail(email, message, pdf)
-    if text == "Success":
-        return ""
-    else:
-        return "There was some problem in sending your invoice."
+    users = getUser()
+    zipcode = users['zipcode']
+    pickup_list = get_pincode_list(zipcode)
+    text = "Please type the number of the nearest pickup point from the list below-<br>"
+    i = 0
+    for point in pickup_list:
+        i += 1
+        text += "{}. {}<br>".format(i, point)
+    return text
 
 
 def sendmail(to_email, message, pdf):
@@ -283,36 +296,28 @@ def sendmail(to_email, message, pdf):
     msg['Subject'] = "Your EssentialsKart order has been confirmed."
     msg['From'] = from_email
     msg['To'] = to_email
-
     msgText = MIMEText(message, 'html')
     msg.attach(msgText)
-
-    fp = pdf  # pdf path or object
-    msgpdf = MIMEApplication(fp, _subtype="pdf")
+    msgpdf = MIMEApplication(pdf, _subtype="pdf")
     msgpdf.add_header('Content-Disposition', 'attachment', filename='invoice')
     msg.attach(msgpdf)
-
-    response = {}
     try:
         with smtplib.SMTP("smtp.gmail.com", 587) as s:
             s.starttls()
             s.login(from_email, password)
-            print("Sending Mail:", to_email)
             s.sendmail(from_email, to_email, msg.as_string())
-        response['email_status'] = "Success"
+        response = "Success"
     except Exception as err:
         print(err)
-        response['email_status'] = "Failed"
-    print(response)
+        response = "Failed"
     return response
 
 
 def edit_order():
     db = firebaseObj.database()
-    req = request.get_json(force=True)
-    params = req.get('queryResult').get('parameters')
-    sess = req.get('session')[-13:] + "-" + str(date.today())
-    orders = fb_app.get('/orders', sess)
+    sess = getSession()
+    orders = getUserOrder()
+    params = getParams()
     item_list = params['items']
     num_list = params['number']
     order_dict = dict(orders)
@@ -328,7 +333,6 @@ def edit_order():
                     neglist.append(item_list[i])
         else:
             if int(num_list[i]) == 0:
-                print(type(item_list[0]))
                 del order_dict[item_list[i]]
             else:
                 order_dict[item_list[i]][0] = int(num_list[i])
@@ -341,10 +345,9 @@ def edit_order():
 
 
 def edit_details():
-    req = request.get_json(force=True)
-    phone = req.get('session')[-13:]
-    params = req.get('queryResult').get('parameters')
-    data = fb_app.get('/users', phone)
+    phone = getPhone()
+    params = getParams()
+    data = getUser()
     for key in params:
         if params[key] != "":
             if key == "name1":
@@ -357,76 +360,77 @@ def edit_details():
                                                                                            data['zipcode'])
 
 
+def get_pincode_list(zipcode):
+    pickup_list = []
+    with open('zipcodes.csv', 'r') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        for row in csv_reader:
+            if row[1] == zipcode:
+                if row[3] == 'NA' or row[3] == row[4]:
+                    point = "{}, {}, {} - {}".format(row[0], row[2], row[4], row[1])
+                else:
+                    point = "{}, {}, {}, {} - {}".format(row[0], row[2], row[3], row[4], row[1])
+                pickup_list.append(point)
+            elif len(pickup_list) > 0:
+                break
+    return pickup_list
+
+
+def add_pickup():
+    phone = getPhone()
+    users = getUser()
+    pickupNo = int(getParams('number'))
+    zipcode = users['zipcode']
+    pickup_list = get_pincode_list(zipcode)
+    if pickupNo <= len(pickup_list):
+        pickup = pickup_list[pickupNo - 1]
+    else:
+        pickup = pickup_list[0]
+    pdf = genPDF(users, phone, pickup)  # here we'll receive a pdf
+    email = users['email']
+    name = users['name']
+    message = "Hey {},<br> Thank you for ordering with us. We hope you find our services useful. Here is your invoice." \
+        .format(name)
+    text = sendmail(email, message, pdf)
+    if text == "Success":
+        return "Thank you for your order. We have sent the invoice to your registered email."
+    else:
+        return "There was some problem in sending your invoice."
+
+
 @app.route('/webhook', methods=['GET', 'POST'])
 def webhook():
     action = getAction()
+    text = ''
     if action == 'order_items':  # save items to session
         text = pushToDB()
-        reply = {
-            "fulfillmentText": text,
-        }
-        return make_response(jsonify(reply))
     elif action == 'input.welcome':  # send the items pdf
         url = "https://github.com/ItsTheKayBee/chatbot-webhook-API/raw/master/price_list.pdf"
-        # sendPDF(url)      # uncomment later
-        reply = {
-            "fulfillmentText": "",
-        }
-        return make_response(jsonify(reply))
+        # text = sendPDF(url)      # uncomment later
     elif action == 'OrderItems.OrderItems-cancel':  # delete the session and end it
-        del_sess()
-        reply = {
-            "fulfillmentText": "",
-        }
-        return make_response(jsonify(reply))
+        text = del_sess()
     elif action == 'confirm_details':  # ask for confirmation about order
         text = conf_details()
-        reply = {
-            "fulfillmentText": text,
-        }
-        return make_response(jsonify(reply))
     elif action == 'confirm_order':  # send final receipt over email and wapp
         text = conf_order()
-        reply = {
-            "fulfillmentText": text,
-        }
-        return make_response(jsonify(reply))
     elif action == 'edit_order':  # edit order
         text = edit_order()
-        reply = {
-            "fulfillmentText": text,
-        }
-        return make_response(jsonify(reply))
     elif action == 'edit_details':  # edit individual detail
         text = edit_details()
-        reply = {
-            "fulfillmentText": text,
-        }
-        return make_response(jsonify(reply))
     elif action == 'stop_order':  # check phone
         text = check_phone()
-        reply = {
-            "fulfillmentText": text,
-        }
-        return make_response(jsonify(reply))
     elif action == 'check_passcode':  # check passcode
         text = check_pwd()
-        reply = {
-            "fulfillmentText": text,
-        }
-        return make_response(jsonify(reply))
     elif action == 'get_passcode':  # store passcode
         text = add_pwd()
-        reply = {
-            "fulfillmentText": text,
-        }
-        return make_response(jsonify(reply))
     elif action == 'mode':  # store mode
         text = add_mode()
-        reply = {
-            "fulfillmentText": text,
-        }
-        return make_response(jsonify(reply))
+    elif action == 'get_pickup':  # store mode
+        text = add_pickup()
+    reply = {
+        "fulfillmentText": text,
+    }
+    return make_response(jsonify(reply))
 
 
 if __name__ == '__main__':

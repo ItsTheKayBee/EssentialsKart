@@ -1,0 +1,682 @@
+Bazargate                ,400001,Mumbai  South     ,Mumbai         ,Mumbai
+M.P.T.                   ,400001,Mumbai  South     ,Mumbai         ,Mumbai
+Stock Exchange           ,400001,Mumbai  South     ,Mumbai         ,Mumbai
+Tajmahal                 ,400001,Mumbai  South     ,Mumbai         ,Mumbai
+Town Hall                ,400001,Mumbai  South     ,Mumbai         ,Mumbai
+Mumbai G.P.O.            ,400001,Mumbai G.P.O.     ,Mumbai         ,Mumbai
+Kalbadevi                ,400002,Mumbai  South     ,Mumbai         ,Mumbai
+Ramwadi                  ,400002,Mumbai  South     ,Mumbai         ,Mumbai
+S. C. Court              ,400002,Mumbai  South     ,Mumbai         ,Mumbai
+Thakurdwar               ,400002,Mumbai  South     ,Mumbai         ,Mumbai
+B.P.Lane                 ,400003,Mumbai  East      ,NA             ,Mumbai
+Mandvi                   ,400003,Mumbai  East      ,NA             ,Mumbai
+Masjid                   ,400003,Mumbai  East      ,NA             ,Mumbai
+Null Bazar               ,400003,Mumbai  East      ,NA             ,Mumbai
+Ambewadi                 ,400004,Mumbai  South     ,Mumbai         ,Mumbai
+Charni Road              ,400004,Mumbai  South     ,Mumbai         ,Mumbai
+Chaupati                 ,400004,Mumbai  South     ,Mumbai         ,Mumbai
+Girgaon                  ,400004,Mumbai  South     ,Mumbai         ,Mumbai
+Madhavbaug               ,400004,Mumbai  South     ,Mumbai         ,Mumbai
+Opera House              ,400004,Mumbai  South     ,Mumbai         ,Mumbai
+Asvini                   ,400005,Mumbai  South     ,Mumbai         ,Mumbai
+Colaba Bazar             ,400005,Mumbai  South     ,NA             ,Mumbai
+Colaba                   ,400005,Mumbai  South     ,Mumbai         ,Mumbai
+Holiday Camp             ,400005,Mumbai  South     ,Mumbai         ,Mumbai
+V.W.T.C.                 ,400005,Mumbai  South     ,Mumbai         ,Mumbai
+Malabar Hill             ,400006,Mumbai  West      ,Mumbai         ,Mumbai
+Bharat Nagar             ,400007,Mumbai  West      ,Mumbai         ,Mumbai
+Grant Road               ,400007,Mumbai  West      ,Mumbai         ,Mumbai
+N.S.Patkar Marg          ,400007,Mumbai  West      ,Mumbai         ,Mumbai
+S V Marg                 ,400007,Mumbai  West      ,Mumbai         ,Mumbai
+Tardeo                   ,400007,Mumbai  West      ,Mumbai         ,Mumbai
+Falkland Road            ,400008,Mumbai  West      ,Mumbai         ,Mumbai
+J.J.Hospital             ,400008,Mumbai  West      ,Mumbai         ,Mumbai
+Kamathipura              ,400008,Mumbai  West      ,Mumbai         ,Mumbai
+M A Marg                 ,400008,Mumbai  West      ,Mumbai         ,Mumbai
+Mumbai Central           ,400008,Mumbai  West      ,Mumbai         ,Mumbai
+Chinchbunder             ,400009,Mumbai  East      ,NA             ,Mumbai
+Noor Baug                ,400009,Mumbai  East      ,NA             ,Mumbai
+Princess Dock            ,400009,Mumbai  East      ,Mumbai         ,Mumbai
+Dockyard Road            ,400010,Mumbai  East      ,Mumbai         ,Mumbai
+Mazgaon Dock             ,400010,Mumbai  East      ,Mumbai         ,Mumbai
+Mazgaon Road             ,400010,Mumbai  East      ,Mumbai         ,Mumbai
+Mazgaon                  ,400010,Mumbai  East      ,Mumbai         ,Mumbai
+V K Bhavan               ,400010,Mumbai  East      ,Mumbai         ,Mumbai
+Agripada                 ,400011,Mumbai  West      ,Mumbai         ,Mumbai
+BPC  Jacob Circle        ,400011,Mumbai  West      ,Mumbai         ,Mumbai
+Chinchpokli              ,400011,Mumbai  West      ,Mumbai         ,Mumbai
+Haines Road              ,400011,Mumbai  West      ,Mumbai         ,Mumbai
+Jacob Circle             ,400011,Mumbai  West      ,Mumbai         ,Mumbai
+BEST STaff Quarters      ,400012,Mumbai  East      ,NA             ,Mumbai
+Chamarbaug               ,400012,Mumbai  East      ,Mumbai         ,Mumbai
+Haffkin Institute        ,400012,Mumbai  East      ,Mumbai         ,Mumbai
+Lal Baug                 ,400012,Mumbai  East      ,Mumbai         ,Mumbai
+Parel Naka               ,400012,Mumbai  East      ,Mumbai         ,Mumbai
+Parel Rly Work Shop      ,400012,Mumbai  East      ,NA             ,Mumbai
+Parel                    ,400012,Mumbai  East      ,Mumbai         ,Mumbai
+Delisle Road             ,400013,Mumbai  West      ,Mumbai         ,Mumbai
+Dadar Colony             ,400014,Mumbai  East      ,Mumbai         ,Mumbai
+Dadar                    ,400014,Mumbai  East      ,Mumbai         ,Mumbai
+Naigaon                  ,400014,Mumbai  East      ,Mumbai         ,Mumbai
+Sewri                    ,400015,Mumbai  East      ,Mumbai         ,Mumbai
+Kapad Bazar              ,400016,Mumbai  West      ,Mumbai         ,Mumbai
+Mahim Bazar              ,400016,Mumbai  West      ,Mumbai         ,Mumbai
+Mahim East               ,400016,Mumbai  West      ,Mumbai         ,Mumbai
+Mahim                    ,400016,Mumbai  West      ,Mumbai         ,Mumbai
+Mori Road                ,400016,Mumbai  West      ,Mumbai         ,Mumbai
+Dharavi Road             ,400017,Mumbai  West      ,Mumbai         ,Mumbai
+Dharavi                  ,400017,Mumbai  West      ,Mumbai         ,Mumbai
+Worli Naka               ,400018,Mumbai  West      ,Mumbai         ,Mumbai
+Worli                    ,400018,Mumbai  West      ,Mumbai         ,Mumbai
+Matunga                  ,400019,Mumbai  North East,Mumbai         ,Mumbai
+Central Building         ,400020,Mumbai  South     ,Mumbai         ,Mumbai
+Churchgate               ,400020,Mumbai  South     ,Mumbai         ,Mumbai
+Marine Lines             ,400020,Mumbai  South     ,Mumbai         ,Mumbai
+Nariman Point            ,400021,Mumbai  South     ,Mumbai         ,Mumbai
+New Yogakshema           ,400021,Mumbai  South     ,Mumbai         ,Mumbai
+Chunabhatti              ,400022,Mumbai  North East,Mumbai         ,Mumbai
+Raoli Camp               ,400022,Mumbai  North East,NA             ,Mumbai
+Sion                     ,400022,Mumbai  North East,Mumbai         ,Mumbai
+Transit Camp             ,400022,Mumbai  North East,NA             ,Mumbai
+Nehru Nagar              ,400024,Mumbai  North East,Mumbai         ,Mumbai
+New Prabhadevi Road      ,400025,Mumbai  West      ,Mumbai         ,Mumbai
+Prabhadevi               ,400025,Mumbai  West      ,Mumbai         ,Mumbai
+Cumballa Hill            ,400026,Mumbai  West      ,Mumbai         ,Mumbai
+Cumballa Sea Face        ,400026,Mumbai  West      ,Mumbai         ,Mumbai
+Dr Deshmukh Marg         ,400026,Mumbai  West      ,Mumbai         ,Mumbai
+Gowalia Tank             ,400026,Mumbai  West      ,Mumbai         ,Mumbai
+V J B Udyan              ,400027,Mumbai  East      ,Mumbai         ,Mumbai
+Bhawani Shankar Rd       ,400028,Mumbai  West      ,Mumbai         ,Mumbai
+Bhawani Shankar          ,400028,Mumbai  West      ,Mumbai         ,Mumbai
+Gokhale Road             ,400028,Mumbai  West      ,Mumbai         ,Mumbai
+Ranade Road              ,400028,Mumbai  West      ,Mumbai         ,Mumbai
+S V S Marg               ,400028,Mumbai  West      ,Mumbai         ,Mumbai
+Shivaji Park             ,400028,Mumbai  West      ,Mumbai         ,Mumbai
+A I Staff Colony         ,400029,Mumbai  North     ,Mumbai         ,Mumbai
+Santacruz P&t Colony     ,400029,Mumbai  North     ,Mumbai         ,Mumbai
+Century Mill             ,400030,Mumbai  West      ,Mumbai         ,Mumbai
+Worli Colony             ,400030,Mumbai  West      ,Mumbai         ,Mumbai
+Worli Police Camp        ,400030,Mumbai  West      ,Mumbai         ,Mumbai
+Worli Sea Face           ,400030,Mumbai  West      ,Mumbai         ,Mumbai
+Kidwai Nagar             ,400031,Mumbai  East      ,Mumbai         ,Mumbai
+Wadala Rs                ,400031,Mumbai  East      ,Mumbai         ,Mumbai
+Wadala                   ,400031,Mumbai  East      ,Mumbai         ,Mumbai
+High Court Building      ,400032,Mumbai  South     ,Mumbai         ,Mumbai
+Mantralaya               ,400032,Mumbai  South     ,Mumbai         ,Mumbai
+Secretariate             ,400032,Mumbai  South     ,Mumbai         ,Mumbai
+Cotton Exchange          ,400033,Mumbai  East      ,Mumbai         ,Mumbai
+Kalachowki               ,400033,Mumbai  East      ,Mumbai         ,Mumbai
+L B S N E college        ,400033,Mumbai  East      ,Mumbai         ,Mumbai
+Reay Road                ,400033,Mumbai  East      ,Mumbai         ,Mumbai
+Tank Road                ,400033,Mumbai  East      ,NA             ,Mumbai
+Haji Ali                 ,400034,Mumbai  West      ,Mumbai         ,Mumbai
+Tulsiwadi                ,400034,Mumbai  West      ,Mumbai         ,Mumbai
+Rajbhavan                ,400035,Mumbai  West      ,Mumbai         ,Mumbai
+Antop Hill               ,400037,Mumbai  East      ,Mumbai         ,Mumbai
+B P T Colony             ,400037,Mumbai  East      ,Mumbai         ,Mumbai
+C G S Colony             ,400037,Mumbai  East      ,Mumbai         ,Mumbai
+Wadala Truck Terminal    ,400037,Mumbai  East      ,NA             ,Mumbai
+Bhandup East             ,400042,Mumbai  North East,NA             ,Mumbai
+D.M. Colony              ,400043,Mumbai  North East,NA             ,Mumbai
+Shivaji Nagar            ,400043,Mumbai  North East,NA             ,Mumbai
+Juhu                     ,400049,Mumbai  North     ,Mumbai         ,Mumbai
+Bandra West              ,400050,Mumbai  North     ,Mumbai         ,Mumbai
+Audit Bhavan             ,400051,Mumbai  North     ,Bandra         ,Mumbai
+B.N. Bhavan              ,400051,Mumbai  North     ,Mumbai         ,Mumbai
+Bandra(East)             ,400051,Mumbai  North     ,Mumbai         ,Mumbai
+Government Colony        ,400051,Mumbai  North     ,Mumbai         ,Mumbai
+Kherwadi                 ,400051,Mumbai  North     ,Mumbai         ,Mumbai
+Danda                    ,400052,Mumbai  North     ,Mumbai         ,Mumbai
+Khar Colony              ,400052,Mumbai  North     ,Mumbai         ,Mumbai
+Khar Delivery            ,400052,Mumbai  North     ,Mumbai         ,Mumbai
+V.P. Road                ,400052,Mumbai  North     ,Mumbai         ,Mumbai
+Andheri                  ,400053,Mumbai  North     ,Mumbai         ,Mumbai
+Azad Nagar               ,400053,Mumbai  North     ,Mumbai         ,Mumbai
+Santacruz Central        ,400054,Mumbai  North     ,Mumbai         ,Mumbai
+Santacruz(West)          ,400054,Mumbai  North     ,Mumbai         ,Mumbai
+Santacruz(East)          ,400055,Mumbai  North     ,Mumbai         ,Mumbai
+Vakola                   ,400055,Mumbai  North     ,Mumbai         ,Mumbai
+IRLA                     ,400056,Mumbai  North     ,Mumbai         ,Mumbai
+Vileparle(West)          ,400056,Mumbai  North     ,Mumbai         ,Mumbai
+Hanuman Road             ,400057,Mumbai  North     ,Mumbai         ,Mumbai
+Vileeparle (East)        ,400057,Mumbai  North     ,Mumbai         ,Mumbai
+Vileparle Railway Station,400057,Mumbai  North     ,Mumbai         ,Mumbai
+Andheri Railway Station  ,400058,Mumbai  North     ,Mumbai         ,Mumbai
+H.M.P. School            ,400058,Mumbai  North     ,Mumbai         ,Mumbai
+J.B. Nagar               ,400059,Mumbai  North     ,Mumbai         ,Mumbai
+Marol Bazar              ,400059,Mumbai  North     ,Mumbai         ,Mumbai
+Marol Naka               ,400059,Mumbai  North     ,Mumbai         ,Mumbai
+Jogeshwari East          ,400060,Mumbai  North West,Jogeshwari East,Mumbai
+Madh                     ,400061,Mumbai  North     ,Mumbai         ,Mumbai
+Vesava                   ,400061,Mumbai  North     ,Mumbai         ,Mumbai
+Goregaon East            ,400063,Mumbai  North West,Goregaon East  ,Mumbai
+Sharma Estate            ,400063,Mumbai  North West,Goregaon East  ,Mumbai
+Liberty Garden           ,400064,Mumbai  North West,Malad West     ,Mumbai
+Malad                    ,400064,Mumbai  North West,Malad West     ,Mumbai
+Malad West Dely          ,400064,Mumbai  North West,Malad West     ,Mumbai
+Orlem                    ,400064,Mumbai  North West,Malad West     ,Mumbai
+Aareymilk Colony         ,400065,Mumbai  North West,Goregaon East  ,Mumbai
+Nagari Niwara            ,400065,Mumbai  North West,Goregaon East  ,Mumbai
+S R P F Camp             ,400065,Mumbai  North West,Jogeshwari East,Mumbai
+Borivali East            ,400066,Mumbai  North West,Borivlai East  ,Mumbai
+Daulat Nagar             ,400066,Mumbai  North West,Borivali East  ,Mumbai
+Magthane                 ,400066,Mumbai  North West,Borivali East  ,Mumbai
+Rajendra Nagar           ,400066,Mumbai  North West,Borivali East  ,Mumbai
+S. K.Nagar               ,400066,Mumbai  North West,Borivali East  ,Mumbai
+Charkop                  ,400067,Mumbai  North West,Kandivlai West ,Mumbai
+Kandivali RS             ,400067,Mumbai  North West,Mumbai         ,Mumbai
+Kandivali West           ,400067,Mumbai  North West,Kandivali West ,Mumbai
+Dahisar RS               ,400068,Mumbai  North West,Dahisar West   ,Mumbai
+Dahisar                  ,400068,Mumbai  North West,Dahisar East   ,Mumbai
+Ketkipada                ,400068,Mumbai  North West,Dahisar East   ,Mumbai
+Andheri East             ,400069,Mumbai  North     ,Mumbai         ,Mumbai
+Nagardas Road            ,400069,Mumbai  North     ,Mumbai         ,Mumbai
+Kurla North              ,400070,Mumbai  North East,NA             ,Mumbai
+Kurla                    ,400070,Mumbai  North East,Mumbai         ,Mumbai
+Netajinagar              ,400070,Mumbai  North East,Mumbai         ,Mumbai
+Chembur                  ,400071,Mumbai  North East,NA             ,Mumbai
+Sindhi Society           ,400071,Mumbai  North East,NA             ,Mumbai
+Sakinaka                 ,400072,Mumbai  North East,NA             ,Mumbai
+Vihar Road               ,400072,Mumbai  North East,NA             ,Mumbai
+Chembur Extension        ,400074,Mumbai  North East,NA             ,Mumbai
+FCI                      ,400074,Mumbai  North East,NA             ,Mumbai
+Mahul Road               ,400074,Mumbai  North East,NA             ,Mumbai
+Best Staff Colony        ,400075,Mumbai  North East,NA             ,Mumbai
+Pant Nagar               ,400075,Mumbai  North East,NA             ,Mumbai
+R.A.Nagar                ,400075,Mumbai  North East,NA             ,Mumbai
+Powai Iit                ,400076,Mumbai  North East,NA             ,Mumbai
+Rajawadi                 ,400077,Mumbai  North East,NA             ,Mumbai
+Bhandup Ind. Estate      ,400078,Mumbai  North East,NA             ,Mumbai
+Bhandup West             ,400078,Mumbai  North East,NA             ,Mumbai
+J.M. Road                ,400078,Mumbai  North East,NA             ,Mumbai
+P.H. Colony              ,400078,Mumbai  North East,NA             ,Mumbai
+Usha Nagar               ,400078,Mumbai  North East,NA             ,Mumbai
+Psm Colony               ,400079,Mumbai  North East,NA             ,Mumbai
+Vikhroli                 ,400079,Mumbai  North East,NA             ,Mumbai
+Mulund Dd Road           ,400080,Mumbai  North East,NA             ,Mumbai
+Mulund West              ,400080,Mumbai  North East,NA             ,Mumbai
+Nahur                    ,400080,Mumbai  North East,NA             ,Mumbai
+Nehru Road               ,400080,Mumbai  North East,NA             ,Mumbai
+S.B. Road                ,400080,Mumbai  North East,NA             ,Mumbai
+Mhada Colony             ,400081,Mumbai  North East,NA             ,Mumbai
+Mulund East              ,400081,Mumbai  North East,NA             ,Mumbai
+Bhandup Complex          ,400082,Mumbai  North East,NA             ,Mumbai
+Mulund Colony            ,400082,Mumbai  North East,NA             ,Mumbai
+Kannamwar Nagar          ,400083,Mumbai  North East,NA             ,Mumbai
+Tagore Nagar             ,400083,Mumbai  North East,NA             ,Mumbai
+Barve Nagar              ,400084,Mumbai  North East,NA             ,Mumbai
+BARC                     ,400085,Mumbai  North East,NA             ,Mumbai
+Ghatkopar West           ,400086,Mumbai  North East,NA             ,Mumbai
+Rifle Range              ,400086,Mumbai  North East,NA             ,Mumbai
+Sahakar Bhavan           ,400086,Mumbai  North East,NA             ,Mumbai
+NITIE                    ,400087,Mumbai  North East,Mumbai         ,Mumbai
+Govandi                  ,400088,Mumbai  North East,NA             ,Mumbai
+T.F.Donar                ,400088,Mumbai  North East,NA             ,Mumbai
+Trombay                  ,400088,Mumbai  North East,NA             ,Mumbai
+Chembur Rs               ,400089,Mumbai  North East,NA             ,Mumbai
+Tilak Nagar              ,400089,Mumbai  North East,NA             ,Mumbai
+Borivali                 ,400091,Mumbai  North West,Borivali West  ,Mumbai
+Borivali West            ,400092,Mumbai  North West,Borivali West  ,Mumbai
+Chakala Midc             ,400093,Mumbai  North     ,Mumbai         ,Mumbai
+Anushakti Nagar          ,400094,Mumbai  North East,NA             ,Mumbai
+Ins Hamla                ,400095,Mumbai  North West,Malad West     ,Mumbai
+Kharodi                  ,400095,Mumbai  North West,Malad West     ,Mumbai
+Seepz                    ,400096,Mumbai  North     ,Mumbai         ,Mumbai
+Malad East               ,400097,Mumbai  North West,Malad East     ,Mumbai
+Rani Sati Marg           ,400097,Mumbai  North West,Malad East     ,Mumbai
+Vidyanagari              ,400098,Mumbai  North     ,Mumbai         ,Mumbai
+Airport                  ,400099,Mumbai  North     ,Mumbai         ,Mumbai
+International Airport    ,400099,Mumbai  North     ,Mumbai         ,Mumbai
+Sahar P & T Colony       ,400099,Mumbai  North     ,Mumbai         ,Mumbai
+Sahargaon                ,400099,Mumbai  North     ,Mumbai         ,Mumbai
+Kandivali East           ,400101,Mumbai  North West,Kandivali East ,Mumbai
+Jogeshwari West          ,400102,Mumbai  North West,Jogeshwari West,Mumbai
+Oshiwara                 ,400102,Mumbai  North West,Jogeshwari West,Mumbai
+Mandapeshwar             ,400103,Mumbai  North West,Borivali West  ,Mumbai
+Bangur Nagar             ,400104,Mumbai  North West,Goregaon West  ,Mumbai
+Goregaon RS              ,400104,Mumbai  North West,Goregaon West  ,Mumbai
+Goregaon                 ,400104,Mumbai  North West,Goregaon West  ,Mumbai
+Motilal Nagar            ,400104,Mumbai  North West,Goregaon West  ,Mumbai
+Thane Bazar              ,400601,Thane Central     ,Thane          ,Thane
+Thane                    ,400601,Thane Central     ,Thane          ,Thane
+Thane R.S.               ,400601,Thane Central     ,Thane          ,Thane
+Gokhale Road             ,400602,Thane Central     ,NA             ,Thane
+Naupada                  ,400602,Thane Central     ,Thane          ,Thane
+Kopri Colony             ,400603,Thane Central     ,Thane          ,Thane
+Thane East               ,400603,Thane Central     ,Thane          ,Thane
+Wagle I.E.               ,400604,Thane Central     ,Thane          ,Thane
+Kalwa                    ,400605,Thane Central     ,Thane          ,Thane
+Jekegram                 ,400606,Thane Central     ,Thane          ,Thane
+Chitalsar Manpada        ,400607,Thane Central     ,Thane          ,Thane
+Sandozbaugh              ,400607,Thane Central     ,Thane          ,Thane
+Balkum                   ,400608,Thane Central     ,NA             ,Thane
+Shrirangnagar            ,400608,Thane Central     ,Thane          ,Thane
+Tapasenagar              ,400608,Thane Central     ,Thane          ,Thane
+Apna Bazar               ,400610,Thane Central     ,NA             ,Thane
+Dahisar                  ,400612,Thane Central     ,Thane          ,Thane
+Dawale                   ,400612,Thane Central     ,Thane          ,Thane
+Diwa                     ,400612,Thane Central     ,Thane          ,Thane
+Kausa                    ,400612,Thane Central     ,Thane          ,Thane
+Mumbra                   ,400612,Thane Central     ,Thane          ,Thane
+Waklan                   ,400612,Thane Central     ,Thane          ,Thane
+Belapur Node-- III       ,400614,New Mumbai        ,NA             ,Thane
+Belapur Node- V          ,400614,New Mumbai        ,NA             ,Thane
+Konkan Bhavan            ,400614,New Mumbai        ,NA             ,Thane
+Kasarvadavali            ,400615,Thane Central     ,Thane          ,Thane
+Ghansoli                 ,400701,New Mumbai        ,Rabale         ,Thane
+K.U.Bazar                ,400703,New Mumbai        ,NA             ,Thane
+Sanpada                  ,400703,New Mumbai        ,Thane          ,Thane
+Turbhe Market            ,400703,New Mumbai        ,NA             ,Thane
+Turbhe                   ,400703,New Mumbai        ,NA             ,Thane
+Vashi                    ,400703,New Mumbai        ,NA             ,Thane
+Vashi Sec-26             ,400703,New Mumbai        ,NA             ,Thane
+Vashi-VII                ,400703,New Mumbai        ,NA             ,Thane
+Darave                   ,400706,New Mumbai        ,Thane          ,Thane
+Nerul Node-II            ,400706,New Mumbai        ,NA             ,Thane
+Nerul Node-III           ,400706,New Mumbai        ,NA             ,Thane
+Nerul Sec-48             ,400706,New Mumbai        ,NA             ,Thane
+Airoli                   ,400708,New Mumbai        ,Thane          ,Thane
+Airoli                   ,400708,New Mumbai        ,Digha          ,Thane
+Kopar Khairne            ,400709,New Mumbai        ,NA             ,Thane
+Millenium Business Park  ,400710,New Mumbai        ,NA             ,Thane
+Bhayander West           ,401101,Thane West        ,Thane          ,Thane
+Rai                      ,401101,Thane West        ,Vasai          ,Thane
+Agarwadi                 ,401102,Thane West        ,Mokhada        ,Thane
+Dahisar tymanor          ,401102,Thane West        ,Palghar        ,Thane
+Datiware                 ,401102,Thane West        ,Palghar        ,Thane
+Dhekale                  ,401102,Thane West        ,Palghar        ,Thane
+Edwan                    ,401102,Thane West        ,Palghar        ,Thane
+Navghar                  ,401102,Thane West        ,Palghar        ,Thane
+Pargaon                  ,401102,Thane West        ,Palghar        ,Thane
+Tandulwadi               ,401102,Thane West        ,Palghar        ,Thane
+Tembhikhodave            ,401102,Thane West        ,Palghar        ,Thane
+Umbarpada                ,401102,Thane West        ,Palghar        ,Thane
+Usarani                  ,401102,Thane West        ,Palghar        ,Thane
+Virathan Budruk          ,401102,Thane West        ,Palghar        ,Thane
+Asangaon                 ,401103,Thane West        ,Dahanu         ,Thane
+Bavada                   ,401103,Thane West        ,Dahanu         ,Thane
+Chandigaon               ,401103,Thane West        ,Dahanu         ,Thane
+Gowane                   ,401103,Thane West        ,Dahanu         ,Thane
+Vangaon                  ,401103,Thane West        ,Palghar        ,Thane
+Bhayander East           ,401105,Thane West        ,Thane          ,Thane
+Dongri                   ,401106,Thane West        ,Vasai          ,Thane
+Uttan                    ,401106,Thane West        ,Thane          ,Thane
+Ghodbander               ,401107,Thane West        ,Vasai          ,Thane
+Kashi                    ,401107,Thane West        ,Vasai          ,Thane
+Mira Road                ,401107,Thane West        ,Thane          ,Thane
+Mira                     ,401107,Thane West        ,Thane          ,Thane
+Bassein                  ,401201,Thane West        ,Bassein        ,Thane
+Bhuigaon                 ,401201,Thane West        ,Vasai          ,Thane
+Girij                    ,401201,Thane West        ,Vasai          ,Thane
+Holi Bazar               ,401201,Thane West        ,Vasai          ,Thane
+Kaular Budruk            ,401201,Thane West        ,Vasai          ,Thane
+Mulgaon                  ,401201,Thane West        ,Vasai          ,Thane
+Saloli                   ,401201,Thane West        ,Vasai          ,Thane
+Bassein Road             ,401202,Thane West        ,Bassein        ,Thane
+Umela                    ,401202,Thane West        ,Vasai          ,Thane
+Vasai Road E             ,401202,Thane West        ,Vasai          ,Thane
+Gass                     ,401203,Thane West        ,Vasai          ,Thane
+Nala                     ,401203,Thane West        ,Vasai          ,Thane
+Sopara                   ,401203,Thane West        ,Vasai          ,Thane
+Umrale                   ,401203,Thane West        ,Vasai          ,Thane
+Kelthan                  ,401204,Thane West        ,Vada           ,Thane
+Khaniwali                ,401204,Thane West        ,Vada           ,Thane
+Vajreshwari              ,401204,Thane West        ,Bhiwandi       ,Thane
+Vedhe                    ,401204,Thane West        ,Bhiwandi       ,Thane
+Ganeshpuri               ,401206,Thane West        ,Bhiwandi       ,Thane
+Naigaon                  ,401207,Thane West        ,Vasai          ,Thane
+Papdi                    ,401207,Thane West        ,Vasai          ,Thane
+Gokhiware                ,401208,Thane West        ,Vasai          ,Thane
+Juchandra                ,401208,Thane West        ,Vasai          ,Thane
+Kaman                    ,401208,Thane West        ,Vasai          ,Thane
+Pelhar                   ,401208,Thane West        ,Vasai          ,Thane
+Rajawali                 ,401208,Thane West        ,Vasai          ,Thane
+Sasun Navghar            ,401208,Thane West        ,Vasai          ,Thane
+Satiwai                  ,401208,Thane West        ,Vasai          ,Thane
+Valiv                    ,401208,Thane West        ,Vasai          ,Thane
+Vasai East IE            ,401208,Thane West        ,Vasai          ,Thane
+Nallosapare E            ,401209,Thane West        ,Vasai          ,Thane
+Agashi                   ,401301,Thane West        ,Vasai          ,Thane
+Chikhal Dongre           ,401301,Thane West        ,Vasai          ,Thane
+Kophrad                  ,401301,Thane West        ,Vasai          ,Thane
+Vatar                    ,401301,Thane West        ,Vasai          ,Thane
+Arnala                   ,401302,Thane West        ,Vasai          ,Thane
+Bhatane                  ,401303,Thane West        ,Vasai          ,Thane
+Bolinj                   ,401303,Thane West        ,Vasai          ,Thane
+Chandansar               ,401303,Thane West        ,Vasai          ,Thane
+Dahtsar T                ,401303,Thane West        ,Palghar        ,Thane
+Khaniwade                ,401303,Thane West        ,Palghar        ,Thane
+Mandvi                   ,401303,Thane West        ,Vasai          ,Thane
+Parol                    ,401303,Thane West        ,Vasai          ,Thane
+Saiwan                   ,401303,Thane West        ,Vasai          ,Thane
+Tilher                   ,401303,Thane West        ,Vasai          ,Thane
+Virar                    ,401303,Thane West        ,Vasai          ,Thane
+Kalamb                   ,401304,Thane West        ,Vasai          ,Thane
+Nirmal                   ,401304,Thane West        ,Vasai          ,Thane
+Virar East               ,401305,Thane West        ,Vasai          ,Thane
+Kelwa Road               ,401401,Thane West        ,Palghar        ,Thane
+Kelwa                    ,401401,Thane West        ,Palghar        ,Thane
+Kelwa-mahim              ,401402,Thane West        ,Palghar        ,Thane
+Audhani                  ,401403,Thane West        ,Palghar        ,Thane
+Bandhan                  ,401403,Thane West        ,Palghar        ,Thane
+Bhopoli                  ,401403,Thane West        ,Vikramgad      ,Thane
+Durves                   ,401403,Thane West        ,Palghar        ,Thane
+Govade                   ,401403,Thane West        ,Palghar        ,Thane
+Kev                      ,401403,Thane West        ,Vikramgad      ,Thane
+Kondhan                  ,401403,Thane West        ,Palghar        ,Thane
+Kurze                    ,401403,Thane West        ,Vikramgad      ,Thane
+Manor                    ,401403,Thane West        ,Palghar        ,Thane
+Maswan                   ,401403,Thane West        ,Palghar        ,Thane
+Somta                    ,401403,Thane West        ,Palghar        ,Thane
+Palghar                  ,401404,Thane West        ,Palghar        ,Thane
+Dapoli                   ,401405,Thane West        ,Palghar        ,Thane
+Katale                   ,401405,Thane West        ,Palghar        ,Thane
+Kharekuran               ,401405,Thane West        ,Palghar        ,Thane
+Nadore                   ,401405,Thane West        ,Palghar        ,Thane
+Nihe                     ,401405,Thane West        ,Palghar        ,Thane
+Satpati                  ,401405,Thane West        ,Palghar        ,Thane
+Shirgaon                 ,401405,Thane West        ,Palghar        ,Thane
+Tembhode                 ,401405,Thane West        ,Vasai          ,Thane
+Veur                     ,401405,Thane West        ,Vasai          ,Thane
+Akkarpatti               ,401501,Thane West        ,Dahanu         ,Thane
+Bategaon                 ,401501,Thane West        ,Palghar        ,Thane
+Boisar                   ,401501,Thane West        ,Palghar        ,Thane
+Dandi                    ,401501,Thane West        ,Palghar        ,Thane
+Kumbhawali               ,401501,Thane West        ,Palghar        ,Thane
+Mahagaon                 ,401501,Thane West        ,Palghar        ,Thane
+Murbe                    ,401501,Thane West        ,Palghar        ,Thane
+Nanapur                  ,401501,Thane West        ,Palghar        ,Thane
+Nandgaon Tarapur         ,401501,Thane West        ,Palghar        ,Thane
+Sarawali                 ,401501,Thane West        ,Palghar        ,Thane
+Shigaon                  ,401501,Thane West        ,Palghar        ,Thane
+Umroli                   ,401501,Thane West        ,Palghar        ,Thane
+Dahisar Tarapur          ,401502,Thane West        ,Palghar        ,Thane
+Ghiwali                  ,401502,Thane West        ,Palghar        ,Thane
+Kudan                    ,401502,Thane West        ,Palghar        ,Thane
+Tarapur                  ,401502,Thane West        ,Palghar        ,Thane
+Vengani                  ,401502,Thane West        ,Palghar        ,Thane
+Chinchani                ,401503,Thane West        ,Dahanu         ,Thane
+Tanashi                  ,401503,Thane West        ,Dahanu         ,Thane
+Vadhavan                 ,401503,Thane West        ,Dahanu         ,Thane
+Varor                    ,401503,Thane West        ,Dahanu         ,Thane
+Parnali                  ,401504,Thane West        ,Palghar        ,Thane
+Salwad                   ,401504,Thane West        ,Palghar        ,Thane
+Tarapur App              ,401504,Thane West        ,Palghar        ,Thane
+Tarapur Ti               ,401506,Thane West        ,Palghar        ,Thane
+Badapokharan             ,401601,Thane West        ,Dahanu         ,Thane
+Dahanu                   ,401601,Thane West        ,Dahanu         ,Thane
+Narpad                   ,401601,Thane West        ,Dahanu         ,Thane
+Agawan                   ,401602,Thane West        ,Mokhada        ,Thane
+Ashagad                  ,401602,Thane West        ,Dahanu         ,Thane
+Bapugaon                 ,401602,Thane West        ,Dahanu         ,Thane
+Charoti                  ,401602,Thane West        ,Dahanu         ,Thane
+Chikhale                 ,401602,Thane West        ,Dahanu         ,Thane
+Dahanu Road              ,401602,Thane West        ,Dahanu         ,Thane
+Ganjad                   ,401602,Thane West        ,Dahanu         ,Thane
+Jamshet                  ,401602,Thane West        ,Mokhada        ,Thane
+Kainad                   ,401602,Thane West        ,Dahanu         ,Thane
+Karaj Gaon               ,401602,Thane West        ,Talasari       ,Thane
+Nikane                   ,401602,Thane West        ,Dahanu         ,Thane
+Ranshet                  ,401602,Thane West        ,Dahanu         ,Thane
+Saiwan                   ,401602,Thane West        ,Dahanu         ,Thane
+Sawata                   ,401602,Thane West        ,Dahanu         ,Thane
+Urse                     ,401602,Thane West        ,Dahanu         ,Thane
+Waki                     ,401602,Thane West        ,Dahanu         ,Thane
+Dabheri                  ,401603,Thane West        ,Dahanu         ,Thane
+Dehere                   ,401603,Thane West        ,Jawhar         ,Thane
+Dengachimet              ,401603,Thane West        ,Jawhar         ,Thane
+Dhanoshi                 ,401603,Thane West        ,Jawhar         ,Thane
+Jamsar                   ,401603,Thane West        ,Jawhar         ,Thane
+Jawhar                   ,401603,Thane West        ,Jawhar         ,Thane
+Karhe                    ,401603,Thane West        ,Vikramgad      ,Thane
+Khuded                   ,401603,Thane West        ,Vikramgad      ,Thane
+Kogade                   ,401603,Thane West        ,Jawhar         ,Thane
+Nandgaon                 ,401603,Thane West        ,Jawhar         ,Thane
+Nyhale Budruk            ,401603,Thane West        ,Jawhar         ,Thane
+Nyhale Khurdh            ,401603,Thane West        ,Jawhar         ,Thane
+Pathardi                 ,401603,Thane West        ,Mokhada        ,Thane
+Pimpalshet               ,401603,Thane West        ,Jawhar         ,Thane
+Sakhare                  ,401603,Thane West        ,Vikramgad      ,Thane
+Sakharshet               ,401603,Thane West        ,Jawhar         ,Thane
+Sankhare                 ,401603,Thane West        ,Vikramgad      ,Thane
+Shiroshi                 ,401603,Thane West        ,Jawhar         ,Thane
+Valvande                 ,401603,Thane West        ,Jawhar         ,Thane
+Zap                      ,401603,Thane West        ,Jawhar         ,Thane
+Ase                      ,401604,Thane West        ,Mokhada        ,Thane
+Beriste                  ,401604,Thane West        ,Mokhada        ,Thane
+Chas                     ,401604,Thane West        ,Mokhada        ,Thane
+Dolhara                  ,401604,Thane West        ,Mokhada        ,Thane
+Gomghar                  ,401604,Thane West        ,Mokhada        ,Thane
+Kharegaon                ,401604,Thane West        ,Mokhada        ,Thane
+Khodale                  ,401604,Thane West        ,Mokhada        ,Thane
+Koch                     ,401604,Thane West        ,Mokhada        ,Thane
+Mokhada                  ,401604,Thane West        ,Mokhada        ,Thane
+Morhanda                 ,401604,Thane West        ,Mokhada        ,Thane
+Poshera                  ,401604,Thane West        ,Mokhada        ,Thane
+Udhale                   ,401604,Thane West        ,Mokhada        ,Thane
+Vashala                  ,401604,Thane West        ,Mokhada        ,Thane
+Dadade                   ,401605,Thane West        ,Palghar        ,Thane
+Khoste                   ,401605,Thane West        ,Vikramgad      ,Thane
+Medhi                    ,401605,Thane West        ,Vikramgad      ,Thane
+Ondhe                    ,401605,Thane West        ,Vikramgad      ,Thane
+Sukhasale                ,401605,Thane West        ,Vikramgad      ,Thane
+Vikramgad                ,401605,Thane West        ,Vikramgad      ,Thane
+Acchad                   ,401606,Thane West        ,Talasari       ,Thane
+Dabhadi                  ,401606,Thane West        ,Dahanu         ,Thane
+Dhaniwari                ,401606,Thane West        ,Dahanu         ,Thane
+Dhundalwadi              ,401606,Thane West        ,Dahanu         ,Thane
+Dongri                   ,401606,Thane West        ,Talasari       ,Thane
+Girgaon                  ,401606,Thane West        ,Talasari       ,Thane
+Kochai                   ,401606,Thane West        ,Talasari       ,Thane
+Kurze                    ,401606,Thane West        ,Vikramgad      ,Thane
+Modgaon                  ,401606,Thane West        ,Dahanu         ,Thane
+Talasari                 ,401606,Thane West        ,Talasari       ,Thane
+Udhave                   ,401606,Thane West        ,Talasari       ,Thane
+Uplat                    ,401606,Thane West        ,Talasari       ,Thane
+Vevji                    ,401606,Thane West        ,Talasari       ,Thane
+Zari                     ,401606,Thane West        ,Talasari       ,Thane
+Kasa Budruk              ,401607,Thane West        ,Dahanu         ,Thane
+Kasa                     ,401607,Thane West        ,Dahanu         ,Thane
+Rankol                   ,401607,Thane West        ,Dahanu         ,Thane
+Talawada                 ,401607,Thane West        ,Vikramgad      ,Thane
+Tawa                     ,401607,Thane West        ,Dahanu         ,Thane
+Veti                     ,401607,Thane West        ,Vikramgad      ,Thane
+Dahanu TPS               ,401608,Thane West        ,Dahanu         ,Thane
+Suryanagar               ,401609,Thane West        ,Dahanu         ,Thane
+Dapchari                 ,401610,Thane West        ,Dahanu         ,Thane
+Bordi                    ,401701,Thane West        ,Dahanu         ,Thane
+Borigaon                 ,401701,Thane West        ,Talasari       ,Thane
+Gholvad                  ,401702,Thane West        ,Dahanu         ,Thane
+Kosbad-hill              ,401703,Thane West        ,Dahanu         ,Thane
+Bhaji Market             ,421002,Thane Central     ,Ambarnath      ,Thane
+Bus Terminus             ,421002,Thane Central     ,Thane          ,Thane
+Station Road Unr-3       ,421002,Thane Central     ,Kalyan         ,Thane
+Ulhasnagar 1             ,421002,Thane Central     ,Thane          ,Thane
+Ulhasnagar-2             ,421002,Thane Central     ,Kalyan         ,Thane
+Ulhasnagar-4             ,421004,Thane Central     ,Kalyan         ,Thane
+Ulhasnagar-5             ,421005,Thane Central     ,Kalyan         ,Thane
+Padgha Extension Counter ,421101,Thane Central     ,Thane          ,Thane
+Padgha                   ,421101,Thane Central     ,Bhiwandi       ,Thane
+Atali                    ,421102,Thane Central     ,Kalyan         ,Thane
+Manivali                 ,421102,Thane Central     ,Kalyan         ,Thane
+Mohone                   ,421102,Thane Central     ,Kalyan         ,Thane
+Mamnoli                  ,421103,Thane Central     ,Kalyan         ,Thane
+Rayate                   ,421103,Thane Central     ,Kalyan         ,Thane
+Shahad                   ,421103,Thane Central     ,Kalyan         ,Thane
+Vaholi                   ,421103,Thane Central     ,Kalyan         ,Thane
+Varap                    ,421103,Thane Central     ,Kalyan         ,Thane
+Dombivali                ,421201,Thane Central     ,Kalyan         ,Thane
+Ramnagar                 ,421201,Thane Central     ,Kalyan         ,Thane
+Thakurli                 ,421201,Thane Central     ,Kalyan         ,Thane
+Tilaknagar               ,421201,Thane Central     ,Kalyan         ,Thane
+Vishnunagar              ,421202,Thane Central     ,Kalyan         ,Thane
+Dombivali I.A.           ,421203,Thane Central     ,Kalyan         ,Thane
+Khoni                    ,421204,Thane Central     ,Kalyan         ,Thane
+Manpada                  ,421204,Thane Central     ,Kalyan         ,Thane
+Nilje                    ,421204,Thane Central     ,Kalyan         ,Thane
+Padle                    ,421204,Thane Central     ,Kalyan         ,Thane
+Kalyan City              ,421301,Thane Central     ,Kalyan         ,Thane
+Kalyan D.C.              ,421301,Thane Central     ,Kalyan         ,Thane
+Kalyan Rs                ,421301,Thane Central     ,Kalyan         ,Thane
+Subhash Road             ,421301,Thane Central     ,Kalyan         ,Thane
+Amane                    ,421302,Thane Central     ,Bhiwandi       ,Thane
+Angaon                   ,421302,Thane Central     ,Bhiwandi       ,Thane
+Anjur                    ,421302,Thane Central     ,Bhiwandi       ,Thane
+Chimbipada               ,421302,Thane Central     ,Bhiwandi       ,Thane
+Chinchwali               ,421302,Thane Central     ,Bhiwandi       ,Thane
+Dabhad                   ,421302,Thane Central     ,Bhiwandi       ,Thane
+Dandekarwadi             ,421302,Thane Central     ,NA             ,Thane
+Dighashi                 ,421302,Thane Central     ,Bhiwandi       ,Thane
+Dugad                    ,421302,Thane Central     ,Bhiwandi       ,Thane
+Dunge                    ,421302,Thane Central     ,Bhiwandi       ,Thane
+Kalher                   ,421302,Thane Central     ,Bhiwandi       ,Thane
+Kharbav                  ,421302,Thane Central     ,Bhiwandi       ,Thane
+Kunde                    ,421302,Thane Central     ,Bhiwandi       ,Thane
+Lonad                    ,421302,Thane Central     ,Bhiwandi       ,Thane
+Mahapoli                 ,421302,Thane Central     ,Bhiwandi       ,Thane
+Pachhapur                ,421302,Thane Central     ,Bhiwandi       ,Thane
+Paye                     ,421302,Thane Central     ,Bhiwandi       ,Thane
+Rehnal                   ,421302,Thane Central     ,Bhiwandi       ,Thane
+Shantinagar              ,421302,Thane Central     ,Bhiwandi       ,Thane
+Shastrinagar             ,421302,Thane Central     ,Bhiwandi       ,Thane
+Shelar                   ,421302,Thane Central     ,Bhiwandi       ,Thane
+Vadavali                 ,421302,Thane Central     ,Bhiwandi       ,Thane
+Vadpe                    ,421302,Thane Central     ,Bhiwandi       ,Thane
+Abitghar                 ,421303,Thane West        ,Wada           ,Thane
+Abje                     ,421303,Thane West        ,Wada           ,Thane
+Alonde                   ,421303,Thane West        ,Dahanu         ,Thane
+Baliwali                 ,421303,Thane West        ,Vada           ,Thane
+Dohe                     ,421303,Thane West        ,Vada           ,Thane
+Gargoan                  ,421303,Thane West        ,Vada           ,Thane
+Gorhe                    ,421303,Thane West        ,Vada           ,Thane
+Hamarapur                ,421303,Thane West        ,Vada           ,Thane
+Kalambe                  ,421303,Thane West        ,Vada           ,Thane
+Kanchad                  ,421303,Thane West        ,Vada           ,Thane
+Khare Ambiwali           ,421303,Thane West        ,Vada           ,Thane
+Khariwali                ,421303,Thane West        ,Vada           ,Thane
+Kone                     ,421303,Thane West        ,Vada           ,Thane
+Mala                     ,421303,Thane West        ,Vikramgad      ,Thane
+Malwada                  ,421303,Thane West        ,Vikramgad      ,Thane
+Maniwali                 ,421303,Thane West        ,Vada           ,Thane
+Moj                      ,421303,Thane West        ,Vada           ,Thane
+Parali                   ,421303,Thane West        ,Vada           ,Thane
+Pik                      ,421303,Thane West        ,Vada           ,Thane
+Posheri                  ,421303,Thane West        ,Vada           ,Thane
+Sonale                   ,421303,Thane West        ,Vada           ,Thane
+Tuse                     ,421303,Thane West        ,Vada           ,Thane
+Utawali                  ,421303,Thane West        ,Vikramgad      ,Thane
+Varale                   ,421303,Thane West        ,Vada           ,Thane
+Vilkos                   ,421303,Thane West        ,Vada           ,Thane
+Wada                     ,421303,Thane West        ,Wada           ,Thane
+Waki                     ,421303,Thane West        ,Vikramgad      ,Thane
+Vidyashram               ,421305,Thane Central     ,Bhiwandi       ,Thane
+Dwarli                   ,421306,Thane Central     ,Kalyan         ,Thane
+Ganeshwadi               ,421306,Thane Central     ,Kalyan         ,Thane
+Katemanivali             ,421306,Thane Central     ,Kalyan         ,Thane
+Mangrul                  ,421306,Thane Central     ,Kalyan         ,Thane
+Pisavli                  ,421306,Thane Central     ,Kalyan         ,Thane
+Wadi                     ,421306,Thane Central     ,Kalyan         ,Thane
+Bhiwandi                 ,421308,Thane Central     ,Bhiwandi       ,Thane
+Kon                      ,421311,Thane Central     ,Bhiwandi       ,Thane
+Pimplas                  ,421311,Thane Central     ,Bhiwandi       ,Thane
+Saravali                 ,421311,Thane Central     ,Bhiwandi       ,Thane
+Chamble                  ,421312,Thane Central     ,Wada           ,Thane
+Khupri                   ,421312,Thane Central     ,Wade           ,Thane
+Kondhale                 ,421312,Thane Central     ,Wada           ,Thane
+Kudus                    ,421312,Thane Central     ,Bhiwandi       ,Thane
+Met                      ,421312,Thane Central     ,Wada           ,Thane
+Nehroli                  ,421312,Thane Central     ,Wada           ,Thane
+Palsai                   ,421312,Thane Central     ,Wada           ,Thane
+Uchat                    ,421312,Thane Central     ,Wada           ,Thane
+Kasegaon                 ,421401,Thane Central     ,Murbad         ,Thane
+Khutal Baragaon          ,421401,Thane Central     ,Murbad         ,Thane
+Kishore                  ,421401,Thane Central     ,Murbad         ,Thane
+Kolthan                  ,421401,Thane Central     ,Murbad         ,Thane
+Majgaon                  ,421401,Thane Central     ,Murbad         ,Thane
+Mhasa                    ,421401,Thane Central     ,Murbad         ,Thane
+Milhe                    ,421401,Thane Central     ,Murbad         ,Thane
+Moroshi                  ,421401,Thane Central     ,Murbad         ,Thane
+Murbad                   ,421401,Thane Central     ,Murbad         ,Thane
+Narivali                 ,421401,Thane Central     ,Murbad         ,Thane
+Patgaon                  ,421401,Thane Central     ,Murbad         ,Thane
+Saralgaon                ,421401,Thane Central     ,Murbad         ,Thane
+Sasne                    ,421401,Thane Central     ,Murbad         ,Thane
+Sayale                   ,421401,Thane Central     ,Murbad         ,Thane
+Shivale                  ,421401,Thane Central     ,Murbad         ,Thane
+Talegaon                 ,421401,Thane Central     ,Murbad         ,Thane
+Tulai                    ,421401,Thane Central     ,Murbad         ,Thane
+Balegaon                 ,421402,Thane Central     ,NA             ,Thane
+Dhasai                   ,421402,Thane Central     ,Shahapur       ,Thane
+Mal                      ,421402,Thane Central     ,NA             ,Thane
+Palu                     ,421402,Thane Central     ,NA             ,Thane
+Shiroshi                 ,421402,Thane Central     ,NA             ,Thane
+Tokawade                 ,421402,Thane Central     ,NA             ,Thane
+Vaishakhare              ,421402,Thane Central     ,NA             ,Thane
+Gegaon                   ,421403,Thane Central     ,Shahapur       ,Thane
+Kharid                   ,421403,Thane Central     ,Shahapur       ,Thane
+Kharivali                ,421403,Thane Central     ,Shahapur       ,Thane
+Kinholi                  ,421403,Thane Central     ,Kalyan         ,Thane
+Malegaon                 ,421403,Thane Central     ,Shahapur       ,Thane
+Mugaon                   ,421403,Thane Central     ,Shahapur       ,Thane
+Sogaon                   ,421403,Thane Central     ,Shahapur       ,Thane
+Thune                    ,421403,Thane Central     ,Shahapur       ,Thane
+Ambernath                ,421501,Thane Central     ,Kalyan         ,Thane
+Ambernath South          ,421501,Thane Central     ,Ambarnath      ,Thane
+Kansai                   ,421501,Thane Central     ,Ambarnath      ,Thane
+O.E.Ambernath            ,421502,Thane Central     ,Ambarnath      ,Thane
+Badlapur                 ,421503,Thane Central     ,Ambarnath      ,Thane
+Chargaon                 ,421503,Thane Central     ,NA             ,Thane
+Kulgaon                  ,421503,Thane Central     ,Ambarnath      ,Thane
+Manjarli                 ,421503,Thane Central     ,Ambarnath      ,Thane
+Pimpaloli                ,421503,Thane Central     ,NA             ,Thane
+Vangani                  ,421503,Thane Central     ,NA             ,Thane
+Yeranjad                 ,421503,Thane Central     ,Ambarnath      ,Thane
+Jambhul                  ,421505,Thane Central     ,Kalyan         ,Thane
+Netaji Bazar             ,421505,Thane Central     ,Ambarnath      ,Thane
+Additional Ambernath     ,421506,Thane Central     ,Ambarnath      ,Thane
+Aghai                    ,421601,Thane Central     ,Kalyan         ,Thane
+Alyani                   ,421601,Thane Central     ,Shahapur       ,Thane
+Ambarje                  ,421601,Thane Central     ,Kalyan         ,Thane
+Andad                    ,421601,Thane Central     ,Shahapur       ,Thane
+Asangaon                 ,421601,Thane Central     ,Kalyan         ,Thane
+Atgaon                   ,421601,Thane Central     ,Kalyan         ,Thane
+Aware                    ,421601,Thane Central     ,Shahapur       ,Thane
+Chande                   ,421601,Thane Central     ,Kalyan         ,Thane
+Chondhe Colony           ,421601,Thane Central     ,Shahapur       ,Thane
+Dalkhan                  ,421601,Thane Central     ,Kalyan         ,Thane
+Dhasai                   ,421601,Thane Central     ,Shahapur       ,Thane
+Dolkhamb                 ,421601,Thane Central     ,Shahapur       ,Thane
+Gunde                    ,421601,Thane Central     ,Shahapur       ,Thane
+Kalamgaon                ,421601,Thane Central     ,Kalyan         ,Thane
+Kharade                  ,421601,Thane Central     ,Shahapur       ,Thane
+Khardi                   ,421601,Thane Central     ,Kalyan         ,Thane
+Khutghar                 ,421601,Thane Central     ,Shahapur       ,Thane
+Lenad Khurd              ,421601,Thane Central     ,Shahapur       ,Thane
+Nandgaon                 ,421601,Thane Central     ,Shahapur       ,Thane
+Piwali                   ,421601,Thane Central     ,Kalyan         ,Thane
+Sakadbav                 ,421601,Thane Central     ,Shahapur       ,Thane
+Sakurli                  ,421601,Thane Central     ,Shahapur       ,Thane
+Saralambe                ,421601,Thane Central     ,Shahapur       ,Thane
+Sawaroli                 ,421601,Thane Central     ,Shahapur       ,Thane
+Shahapur                 ,421601,Thane Central     ,Shahapur       ,Thane
+Shenwa                   ,421601,Thane Central     ,Shahapur       ,Thane
+Shere                    ,421601,Thane Central     ,Kalyan         ,Thane
+Shirgaon                 ,421601,Thane Central     ,Shahapur       ,Thane
+Tansa                    ,421601,Thane Central     ,Kalyan         ,Thane
+Tembhurli                ,421601,Thane Central     ,Shahapur       ,Thane
+Vaitarna                 ,421601,Thane Central     ,Kalyan         ,Thane
+Vashind                  ,421601,Thane Central     ,Shahapur       ,Thane
+Vehele                   ,421601,Thane Central     ,Kalyan         ,Thane
+Vehloli                  ,421601,Thane Central     ,Shahapur       ,Thane
+Vehloli                  ,421601,Thane Central     ,Kalyan         ,Thane
+Kasara                   ,421602,Thane Central     ,Shahapur       ,Thane
+Mokhawane                ,421602,Thane Central     ,NA             ,Thane
+Shirol                   ,421602,Thane Central     ,NA             ,Thane
+Vashala                  ,421602,Thane Central     ,NA             ,Thane
+Vihigaon                 ,421602,Thane Central     ,NA             ,Thane
+Bhatsanagar              ,421603,Thane Central     ,Shahapur       ,Thane
+Birwadi                  ,421603,Thane Central     ,NA             ,Thane
+Khadavali                ,421605,Thane Central     ,Kalyan         ,Thane
+Manda                    ,421605,Thane Central     ,Kalyan         ,Thane
+Phalegaon                ,421605,Thane Central     ,Kalyan         ,Thane
+Titwala                  ,421605,Thane Central     ,Kalyan         ,Thane
