@@ -63,6 +63,14 @@
         border-bottom: none;
     }
 
+
+
+
+
+
+
+
+
     </style>
 </head>
 
@@ -109,14 +117,17 @@
     </table>
     <table border="1" style="border-collapse:collapse;">
         <tr class="heading center">
+            <td class="center">Sr. No.</td>
             <td class="center">Item</td>
             <td class="center">Quantity</td>
             <td class="center">Price Per Quantity</td>
             <td class="center">Total Price</td>
         </tr>
-
+        {% set i = namespace(value=1) %}
         {% for key in orders %}
         <tr class="item last center">
+            <td class="center">{{ i.value }}</td>
+            {% set i.value = i.value + 1 %}
             <td class="center"> {{ key }}</td>
             <td class="center"> {{ orders[key][0] }}</td>
             <td class="center"> {{ orders[key][1] }}</td>
@@ -125,6 +136,7 @@
         {% endfor %}
 
         <tr class="total center">
+            <td class="center" style="border-top: 3px solid #000"></td>
             <td class="center" style="border-top: 3px solid #000"></td>
             <td class="center" style="border-top: 3px solid #000"></td>
             <td class="center" style="border-top: 3px solid #000"></td>
