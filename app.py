@@ -1,4 +1,5 @@
 import csv
+import os
 import smtplib
 from datetime import date, datetime
 from datetime import timedelta
@@ -197,9 +198,10 @@ def genPDF(users, phone, pickup):
     env = Environment(loader=FileSystemLoader('.'))
     template = env.get_template("templates/invoice.html")
     template_vars = {'users': users, 'orders': orders, "todays_date": todays_date, "delivery_date": delivery_date,
-                     "sum": sums, 'phone': phone, 'invoice': invoice, 'pickup': pickup}
+                     "sum": sums, 'phone': phone, 'invoice': invoice, 'pickup': pickup,
+                     'path': os.path.abspath("static/logo.jpg")}
     html_out = template.render(template_vars)
-    path_to_wkhtml2pdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
+    path_to_wkhtml2pdf = os.path.abspath('wkhtmltopdf/bin/wkhtmltopdf.exe')
     config1 = pdfkit.configuration(wkhtmltopdf=path_to_wkhtml2pdf)
     pdf = pdfkit.from_string(html_out, False, configuration=config1)
     return pdf
